@@ -3,7 +3,7 @@
   background-color: black;
 }
 
-h1 {
+h2 {
   display: flex;
   justify-content: center;
   padding-top: 10%;
@@ -13,10 +13,3 @@ h1 {
   color: gray;
 }
 
-.password-gen .password {
-  position: relative;
-  height: 50px;
-  width: 300px;
-  background-color: grey;
-  color: white;
-}
