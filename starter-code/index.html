@@ -10,30 +10,46 @@
   <title>Password generator app</title>
 </head>
 <body>
-  <header>
-    <h1> Password Generator </h1>
-  </header>
-
-  <section class="password-gen" id="password-gen">
-    <div class="password">
-      P4$5W0rD!
+  <div class="container">
+    <h2>Password Generator</h2>
+    <div class="result-container">
+      <span id="result"></span>
+      <button class="btn" id="clipboard">
+        <i class="far fa-clipboard"></i>
+      </button>
     </div>
-  </section>
+    <div class="settings">
+      <div class="setting">
+        <label for="length">Character length</label>
+        <input type="number" id="length" min="4" max="20" value="20" />
+      </div>
+      <div class="setting">
+        <label for="uppercase">Include Uppercase Letters</label>
+        <input type="checkbox" id="uppercase" checked />
+      </div>
+      <div class="setting">
+        
+      </div>
+    </div>
+      
 
-  Character Length
+      
+      P4$5W0rD!
+      
 
-  Include Uppercase Letters
-  Include Lowercase Letters
-  Include Numbers
-  Include Symbols
+      Character Length
 
-  Strength
+      Include Uppercase Letters
+      Include Lowercase Letters
+      Include Numbers
+      Include Symbols
 
-  Generate
+      Strength
 
-  <script src="script.js">
+      Generate
 
-  </script>
+    
+  </div>
 
 </body>
 </html>
