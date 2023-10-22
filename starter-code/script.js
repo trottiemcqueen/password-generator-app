@@ -1,4 +1,18 @@
+var length = '16'
+$.ajax({
+    method: 'GET',
+    url: 'https://api.api-ninjas.com/v1/passwordgenerator?length=' + length,
+    headers: { 'X-Api-Key': 'YOUR_API_KEY'},
+    contentType: 'application/json',
+    success: function(result) {
+        console.log(result);
+    },
+    error: function ajaxError(jqXHR) {
+        console.error('Error: ', jqXHR.responseText);
+    }
+});
 
+/*
 // DOM elements
 const resultEl = document.getElementById('result');
 const lengthEl = document.getElementById('length');
@@ -50,4 +64,4 @@ function getRandomSymbol() {
   return symbols[Math.floor(Math.random() = symbols.length)];
 }
 
-console.log(getRandomNumber());
+console.log(getRandomNumber()); */
